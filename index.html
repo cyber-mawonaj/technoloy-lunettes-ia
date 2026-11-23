@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunettes Connectées IA — Kit Pédagogique Cycle 4</title>
+    <meta
+      name="description"
+      content="Kit pédagogique interactif Cycle 4 (5e, 4e, 3e) pour la conception de lunettes connectées à l'IA — TechnoLOY Guadeloupe (BO n°9 2024). Rendu 3D PBR, laboratoire électronique, éditeur de blocs, simulateur MQTT et mode hors ligne PWA."
+    />
+    <meta property="og:title" content="Lunettes Connectées IA — Kit Pédagogique Cycle 4" />
+    <meta
+      property="og:description"
+      content="Environnement interactif hors ligne Cycle 4 : maquette 3D PBR, banc électronique, blocs visuels, réseau MQTT et fiches élèves A4."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0284c7" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Lunettes IA" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <script>
+      try {
+        var raw = localStorage.getItem('technoloy_lunettes_pwa_v3');
+        var parsed = raw ? JSON.parse(raw) : null;
+        if (!parsed || parsed.theme !== 'light') {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased selection:bg-sky-600 selection:text-white">
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

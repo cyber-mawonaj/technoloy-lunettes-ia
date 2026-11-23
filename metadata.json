@@ -1,0 +1,8 @@
+{
+  "name": "Lunettes Connectées IA — Kit Pédagogique Cycle 4",
+  "description": "Kit pédagogique interactif Cycle 4 (5e, 4e, 3e) pour la conception de lunettes connectées à l'IA — TechnoLOY Guadeloupe (BO n°9 2024). Rendu 3D PBR, laboratoire électronique, éditeur de blocs, simulateur MQTT et mode hors ligne PWA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
